@@ -1,0 +1,32 @@
+<div class="flex h-screen bg-gray-100 font-sans">
+
+  <aside class="w-64 bg-slate-900 text-white flex-shrink-0 flex flex-col shadow-xl">
+    <div class="p-6">
+      <h2 class="text-2xl font-bold tracking-wider text-blue-400">AWMS</h2>
+    </div>
+
+    <nav class="flex-1 px-4 space-y-2 py-4">
+      <a routerLink="dashboard-home" class="flex items-center p-3 bg-blue-600 rounded-lg transition">
+        <span class="ml-3">Dashboard</span>
+      </a>
+      <a routerLink="/inventory" class="flex items-center p-3 hover:bg-slate-800 rounded-lg transition">
+        <span class="ml-3 text-gray-300">Inventory (Products)</span>
+      </a>
+      <a routerLink="/sales" class="flex items-center p-3 hover:bg-slate-800 rounded-lg transition">
+        <span class="ml-3 text-gray-300">Stock Levels</span>
+      </a>
+      <a routerLink="stock-level" class="flex items-center p-3 hover:bg-slate-800 rounded-lg transition">
+        <span class="ml-3 text-gray-300">Sales Orders</span>
+      </a>
+      <a routerLink="/suppliers" class="flex items-center p-3 hover:bg-slate-800 rounded-lg transition">
+        <span class="ml-3 text-gray-300">Suppliers</span>
+      </a>
+      <a routerLink="warehouse" class="flex items-center p-3 hover:bg-slate-800 rounded-lg transition">
+        <span class="ml-3 text-gray-300">Warehouse</span>
+      </a>
+    </nav>
+
+  </aside>
+  <router-outlet></router-outlet>
+
+</div>
